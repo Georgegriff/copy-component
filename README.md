@@ -47,10 +47,10 @@ await document.querySelector("copy-component").copy();
 
 ## Load from CDN:
 
-TODO
-
 ```html
-
+<script type="module">
+  import copyComponent from "https://cdn.skypack.dev/copy-component";
+</script>
 ```
 
 ## Use within a static site generator:
