@@ -32,7 +32,7 @@ const copyText = async (element) => {
   }
 };
 
-const tagName = "copy-to-clipboard";
+const tagName = "copy-component";
 const template = document.createElement("template");
 template.innerHTML = `
       <style>

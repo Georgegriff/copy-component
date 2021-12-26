@@ -1,4 +1,4 @@
-# copy-to-clipboard
+# copy-component
 
 A Vanilla web component to wrap copy-able text/html elements and add their inner text to the clipboard.
 
@@ -9,18 +9,18 @@ Usage:
 
 ```js
 // assumes resolving from node_modules or import as a esm module in your html.
-import "copy-to-clipboard";
+import "copy-component";
 ```
 
 Wrap html elements for example some pre formatted code:
 
 ```html
-<copy-to-clipboard>
+<copy-component>
   <pre><code class="language-js">
   console.log("some code")
 </code></pre>
   <button slot="button">Copy</button>
-</copy-to-clipboard>
+</copy-component>
 ```
 
 ## Programmatic API
@@ -30,17 +30,17 @@ Because this is a web component it can expose properties on the html element tha
 Say you have the following html without a copy button, you could trigger copying via code.
 
 ```html
-<copy-to-clipboard>
+<copy-component>
   <pre><code class="language-js">
   console.log("some code")
 </code></pre>
-</copy-to-clipboard>
+</copy-component>
 ```
 
 like so:
 
 ```js
-await document.querySelector("copy-to-clipboard").copy();
+await document.querySelector("copy-component").copy();
 ```
 
 ## Load from CDN:
