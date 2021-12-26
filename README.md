@@ -23,6 +23,8 @@ Wrap html elements for example some pre formatted code:
 </copy-component>
 ```
 
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/G2G221OBA)
+
 ## Programmatic API
 
 Because this is a web component it can expose properties on the html element that can be accessed by javascript.
