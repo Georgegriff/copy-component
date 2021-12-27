@@ -79,7 +79,7 @@ export class CopyToClipboard extends HTMLElement {
     }
     const slottedElements = this.shadowRoot
       .querySelector("slot:not([name])")
-      .assignedNodes({
+      .assignedElements({
         flatten: true,
       });
     if (slottedElements && slottedElements.length) {
