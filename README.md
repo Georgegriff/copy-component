@@ -11,6 +11,8 @@ A Vanilla web component to wrap copy-able text/html elements and add their inner
 - Zero dependencies
 - Browser support: Modern, requires support for Web Component APIs (v1).
 
+[Live Demos](https://griffa.dev/demos/copy-component/)
+
 Usage:
 
 ```js
