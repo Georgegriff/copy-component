@@ -8,8 +8,6 @@ A Vanilla web component to wrap copy-able text/html elements and add their inner
   </a>
 </div>
 
-![]()
-
 - Zero dependencies
 - Browser support: Modern, requires support for Web Component APIs (v1).
 
