@@ -25,6 +25,17 @@ Wrap html elements for example some pre formatted code:
 
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/G2G221OBA)
 
+## Events
+
+- `copy` - Fired on copy success
+- `copy-failed` - Fired on copy failed
+
+```js
+document.querySelector("copy-component").addEventListener("copy", () => {
+  // do something e.g. change your button text to "Copied"
+});
+```
+
 ## Programmatic API
 
 Because this is a web component it can expose properties on the html element that can be accessed by javascript.
