@@ -2,6 +2,14 @@
 
 A Vanilla web component to wrap copy-able text/html elements and add their inner text to the clipboard.
 
+<div align="center">
+  <a href="https://griffa.dev/demos/copy-component/">
+    <img src="https://raw.githubusercontent.com/Georgegriff/copy-component/main/copy-component.png?raw=true" width="400" height="52" alt="Screenshot of the copy component">
+  </a>
+</div>
+
+![]()
+
 - Zero dependencies
 - Browser support: Modern, requires support for Web Component APIs (v1).
 
