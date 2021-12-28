@@ -1,10 +1,4 @@
-const copyText = async (elements) => {
-  // Copy to the clipboard
-  const doc = document.createDocumentFragment();
-  const element = document.createElement("div");
-  doc.appendChild(element);
-  elements.forEach((el) => element.appendChild(el.cloneNode(true)));
-
+const copyText = async (element) => {
   if ("clipboard" in navigator) {
     try {
       await navigator.clipboard.writeText(element.innerText);
@@ -89,7 +83,8 @@ export class CopyComponent extends HTMLElement {
       });
     if (slottedElements && slottedElements.length) {
       try {
-        await copyText(slottedElements);
+        // cant support multiple elements due to formatting problems with the other slots
+        await copyText(slottedElements[0]);
         this.dispatchEvent(
           new CustomEvent("copy", {
             bubbles: true,
