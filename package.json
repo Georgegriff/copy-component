@@ -1,6 +1,6 @@
 {
   "name": "copy-component",
-  "version": "0.0.8",
+  "version": "0.1.0",
   "description": "A vanilla custom element that adds the capability to wrap html so it the inner text can be added to the users clipboard",
   "main": "index.js",
   "module": "index.js",
@@ -16,5 +16,9 @@
     "type": "git",
     "url": "https://github.com/Georgegriff/copy-component"
   },
-  "homepage": "https://github.com/Georgegriff/copy-component"
+  "homepage": "https://github.com/Georgegriff/copy-component",
+  "files": [
+    "CopyComponent.js",
+    "index.js"
+  ]
 }
