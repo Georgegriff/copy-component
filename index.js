@@ -85,9 +85,21 @@ export class CopyToClipboard extends HTMLElement {
     if (slottedElements && slottedElements.length) {
       try {
         await copyText(slottedElements[0]);
-        this.dispatchEvent(new CustomEvent("copy"));
+        this.dispatchEvent(
+          new CustomEvent("copy", {
+            bubbles: true,
+            cancelable: true,
+            composed: true,
+          })
+        );
       } catch (e) {
-        this.dispatchEvent(new CustomEvent("copy-failed"));
+        this.dispatchEvent(
+          new CustomEvent("copy-failed", {
+            bubbles: true,
+            composed: true,
+            cancelable: true,
+          })
+        );
       }
     } else {
       console.error("Not slotted elements found to copy.");
