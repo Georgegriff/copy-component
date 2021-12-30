@@ -71,7 +71,7 @@ NOT
 </copy-component>
 ```
 
-This is because due to how shadow dom works, it is not possible to get the formatted inner text of a single slot without also getting the text of the other slots (e.g. the button slot).
+This is due to how shadow dom works, it is not possible to get the formatted inner text of a single slot without also getting the text of the other slots (e.g. the button slot).
 
 ## Programmatic API
 
